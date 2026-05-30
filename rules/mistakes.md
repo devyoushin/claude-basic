@@ -1,7 +1,7 @@
 # 흔한 실수 모음
 
 > 카테고리: 안티패턴 (하지 말아야 할 것들)
-> 참고: ../token-comparison.md
+> 참고: ../guides/token-comparison.md
 
 ---
 

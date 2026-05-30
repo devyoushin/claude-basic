@@ -10,10 +10,11 @@
 claude-practice/
 ├── CLAUDE.md                  ← 프로젝트 컨텍스트 + TokenOps 규칙 (자동 로드)
 ├── INDEX.md                   ← 지금 이 파일
-├── claude-guide.md            ← 전체 개념 가이드
-├── token-comparison.md        ← 질문 방식별 토큰 비교 예시
-├── token-estimation.md        ← 토큰 수 예측 방법
-├── advanced-techniques.md     ← 고수/해커톤 우승자 기법
+├── guides/
+│   ├── claude-guide.md        ← 전체 개념 가이드
+│   ├── token-comparison.md    ← 질문 방식별 토큰 비교 예시
+│   ├── token-estimation.md    ← 토큰 수 예측 방법
+│   └── advanced-techniques.md ← 고수/해커톤 우승자 기법
 ├── tokenops/                  ← TokenOps 시스템
 │   ├── log.md                 ← 세션별 상세 로그
 │   ├── dashboard.md           ← 누적 집계 대시보드
@@ -35,10 +36,10 @@ claude-practice/
 | 문서 | 역할 | 언제 열어볼까 |
 |------|------|------------|
 | `CLAUDE.md` | TokenOps 규칙 적용, 응답 동작 제어 | 규칙 변경 시 |
-| `claude-guide.md` | 개념 학습용 | 개념이 헷갈릴 때 |
-| `token-comparison.md` | 질문 방식 비교 예시 | 토큰 차이 체감할 때 |
-| `token-estimation.md` | 토큰 수 예측 방법 | 보내기 전 토큰 가늠할 때 |
-| `advanced-techniques.md` | 고급 기법 8가지 | 품질/효율 한 단계 올리고 싶을 때 |
+| `guides/claude-guide.md` | 개념 학습용 | 개념이 헷갈릴 때 |
+| `guides/token-comparison.md` | 질문 방식 비교 예시 | 토큰 차이 체감할 때 |
+| `guides/token-estimation.md` | 토큰 수 예측 방법 | 보내기 전 토큰 가늠할 때 |
+| `guides/advanced-techniques.md` | 고급 기법 8가지 | 품질/효율 한 단계 올리고 싶을 때 |
 | `tokenops/log.md` | 세션별 토큰 상세 기록 | 매 작업 후 기록 |
 | `tokenops/dashboard.md` | 누적 현황 한눈에 | 주간/월간 리뷰 시 |
 | `tokenops/budget.md` | 예산 설정 및 최적화 목표 | 최적화 방향 검토 시 |

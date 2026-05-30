@@ -1,7 +1,7 @@
 # 프롬프트 캐싱 규칙
 
 > 카테고리: 캐싱 (Prompt Caching)
-> 관련 문서: ../claude-guide.md
+> 관련 문서: ../guides/claude-guide.md
 
 ---
 
