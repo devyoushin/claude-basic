@@ -1,7 +1,7 @@
 # 작업 유형별 워크플로우 규칙
 
 > 카테고리: 워크플로우
-> 관련 문서: ../docs/claude-guide.md, agent-rules.md
+> 관련 문서: ../guides/claude-guide.md, agent-rules.md
 
 ---
 

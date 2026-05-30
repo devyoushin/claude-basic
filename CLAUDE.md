@@ -18,33 +18,34 @@ claude-basic/
 │       ├── review-doc.md      # /review-doc — 문서 품질 검토
 │       ├── add-troubleshooting.md  # /add-troubleshooting — 이슈 케이스 추가
 │       └── search-kb.md       # /search-kb — 지식베이스 검색
-├── agents/                    # 전문 에이전트 정의
-│   ├── doc-writer.md          # Claude 활용 문서 작성 전문가
-│   ├── tokenops-analyst.md    # TokenOps 분석 전문가
-│   ├── prompt-coach.md        # 프롬프트 최적화 코치
-│   └── workflow-designer.md   # Claude 워크플로우 설계 전문가
-├── templates/                 # 문서 템플릿
-│   ├── service-doc.md         # Claude 활용 패턴 문서 템플릿
-│   ├── runbook.md             # 워크플로우 런북 템플릿
-│   └── incident-report.md     # 이슈 분석 보고서 템플릿
 ├── INDEX.md                   # 전체 목차
 ├── docs/
-│   ├── claude-guide.md        # 개념 가이드
-│   ├── token-comparison.md    # 토큰 비교 예시
-│   ├── token-estimation.md    # 토큰 수 예측 방법
-│   └── advanced-techniques.md # 고급 활용 기법
-├── ops/
+│   ├── guides/
+│   │   ├── claude-guide.md        # 개념 가이드
+│   │   ├── token-comparison.md    # 토큰 비교 예시
+│   │   ├── token-estimation.md    # 토큰 수 예측 방법
+│   │   └── advanced-techniques.md # 고급 활용 기법
+│   ├── agents/
+│   │   ├── doc-writer.md          # Claude 활용 문서 작성 전문가
+│   │   ├── tokenops-analyst.md    # TokenOps 분석 전문가
+│   │   ├── prompt-coach.md        # 프롬프트 최적화 코치
+│   │   └── workflow-designer.md   # Claude 워크플로우 설계 전문가
+│   ├── templates/
+│   │   ├── service-doc.md         # Claude 활용 패턴 문서 템플릿
+│   │   ├── runbook.md             # 워크플로우 런북 템플릿
+│   │   └── incident-report.md     # 이슈 분석 보고서 템플릿
+│   └── rules/
+│       ├── README.md              # 규칙 전체 요약
+│       ├── token-rules.md         # T1~T5
+│       ├── prompt-rules.md        # P1~P5
+│       ├── agent-rules.md         # A1~A5
+│       ├── caching-rules.md       # C1~C5
+│       ├── workflow-rules.md      # W1~W5
+│       └── mistakes.md            # M1~M7
+└── ops/
 │   ├── log.md                 # 세션별 상세 로그 (Cost Explorer)
 │   ├── dashboard.md           # 누적 집계 현황 (Billing Dashboard)
 │   └── budget.md              # 예산 및 최적화 목표
-└── rules/
-    ├── README.md              # 규칙 전체 요약
-    ├── token-rules.md         # T1~T5
-    ├── prompt-rules.md        # P1~P5
-    ├── agent-rules.md         # A1~A5
-    ├── caching-rules.md       # C1~C5
-    ├── workflow-rules.md      # W1~W5
-    └── mistakes.md            # M1~M7
 ```
 
 ---
@@ -55,7 +56,7 @@ claude-basic/
 |--------|------|---------|
 | `/new-doc` | 새 Claude 활용 문서 생성 | `/new-doc 프롬프트 캐싱 전략` |
 | `/new-runbook` | 새 워크플로우 런북 생성 | `/new-runbook 멀티 에이전트 설정` |
-| `/review-doc` | 문서 품질 검토 | `/review-doc docs/claude-guide.md` |
+| `/review-doc` | 문서 품질 검토 | `/review-doc docs/guides/claude-guide.md` |
 | `/add-troubleshooting` | 이슈 케이스 추가 | `/add-troubleshooting 컨텍스트 손실` |
 | `/search-kb` | 지식베이스 검색 | `/search-kb 토큰 최적화` |
 
@@ -118,7 +119,7 @@ log.md에 항목 추가 후 `ops/dashboard.md`의 아래 항목을 갱신:
 
 ### 5. 새 규칙 추가 시
 
-`rules/` 하위 해당 파일에 추가 → `rules/README.md` 요약표 업데이트
+`docs/rules/` 하위 해당 파일에 추가 → `docs/rules/README.md` 요약표 업데이트
 
 ---
 

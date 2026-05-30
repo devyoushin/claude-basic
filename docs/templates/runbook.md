@@ -36,10 +36,10 @@ tail -20 token-log.md
 ```bash
 # 현재 에이전트/명령어 목록 확인
 ls .claude/commands/
-ls agents/
+ls docs/agents/
 
 # 현재 규칙 확인
-ls rules/
+ls docs/rules/
 ```
 
 ---

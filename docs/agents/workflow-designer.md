@@ -45,6 +45,6 @@ Claude를 활용한 복잡한 작업 워크플로우를 설계하는 전문 에�
 
 ## 참조 규칙
 
-- `rules/workflow-rules.md` — W1~W5 워크플로우 규칙
-- `rules/agent-rules.md` — A1~A5 Agent 활용 규칙
-- `rules/caching-rules.md` — C1~C5 캐싱 전략
+- `docs/rules/workflow-rules.md` — W1~W5 워크플로우 규칙
+- `docs/rules/agent-rules.md` — A1~A5 Agent 활용 규칙
+- `docs/rules/caching-rules.md` — C1~C5 캐싱 전략

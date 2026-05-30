@@ -1,7 +1,7 @@
 # Agent 사용 규칙
 
 > 카테고리: Agent / Subagent
-> 참고 가이드: ../docs/claude-guide.md#5-agent-안에서-agent-사용하기-subagent
+> 참고 가이드: ../guides/claude-guide.md#5-agent-안에서-agent-사용하기-subagent
 
 ---
 

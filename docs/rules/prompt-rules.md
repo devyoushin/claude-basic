@@ -1,7 +1,7 @@
 # 프롬프트 작성 규칙
 
 > 카테고리: 프롬프트 엔지니어링
-> 참고 예시: ../docs/token-comparison.md
+> 참고 예시: ../guides/token-comparison.md
 
 ---
 

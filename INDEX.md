@@ -11,22 +11,18 @@ claude-practice/
 ├── CLAUDE.md                  ← 프로젝트 컨텍스트 + TokenOps 규칙 (자동 로드)
 ├── INDEX.md                   ← 지금 이 파일
 ├── docs/
-│   ├── claude-guide.md        ← 전체 개념 가이드
-│   ├── token-comparison.md    ← 질문 방식별 토큰 비교 예시
-│   ├── token-estimation.md    ← 토큰 수 예측 방법
-│   └── advanced-techniques.md ← 고수/해커톤 우승자 기법
-├── ops/                       ← TokenOps 시스템
+│   ├── guides/
+│   │   ├── claude-guide.md        ← 전체 개념 가이드
+│   │   ├── token-comparison.md    ← 질문 방식별 토큰 비교 예시
+│   │   ├── token-estimation.md    ← 토큰 수 예측 방법
+│   │   └── advanced-techniques.md ← 고급 활용 기법
+│   ├── rules/                     ← 카테고리별 규칙
+│   ├── templates/                 ← 문서 템플릿
+│   └── agents/                    ← 전문 에이전트 정의
+└── ops/                       ← TokenOps 시스템
 │   ├── log.md                 ← 세션별 상세 로그
 │   ├── dashboard.md           ← 누적 집계 대시보드
 │   └── budget.md              ← 예산 및 최적화 목표
-└── rules/                     ← 카테고리별 규칙
-    ├── README.md              ← 전체 규칙 요약 인덱스
-    ├── token-rules.md         ← T1~T5: 토큰 절약
-    ├── prompt-rules.md        ← P1~P5: 프롬프트 작성
-    ├── agent-rules.md         ← A1~A5: Agent 활용
-    ├── caching-rules.md       ← C1~C5: 프롬프트 캐싱
-    ├── workflow-rules.md      ← W1~W5: 작업 유형별 순서
-    └── mistakes.md            ← M1~M7: 흔한 실수
 ```
 
 ---
@@ -36,14 +32,14 @@ claude-practice/
 | 문서 | 역할 | 언제 열어볼까 |
 |------|------|------------|
 | `CLAUDE.md` | TokenOps 규칙 적용, 응답 동작 제어 | 규칙 변경 시 |
-| `docs/claude-guide.md` | 개념 학습용 | 개념이 헷갈릴 때 |
-| `docs/token-comparison.md` | 질문 방식 비교 예시 | 토큰 차이 체감할 때 |
-| `docs/token-estimation.md` | 토큰 수 예측 방법 | 보내기 전 토큰 가늠할 때 |
-| `docs/advanced-techniques.md` | 고급 기법 8가지 | 품질/효율 한 단계 올리고 싶을 때 |
+| `docs/guides/claude-guide.md` | 개념 학습용 | 개념이 헷갈릴 때 |
+| `docs/guides/token-comparison.md` | 질문 방식 비교 예시 | 토큰 차이 체감할 때 |
+| `docs/guides/token-estimation.md` | 토큰 수 예측 방법 | 보내기 전 토큰 가늠할 때 |
+| `docs/guides/advanced-techniques.md` | 고급 기법 8가지 | 품질/효율 한 단계 올리고 싶을 때 |
 | `ops/log.md` | 세션별 토큰 상세 기록 | 매 작업 후 기록 |
 | `ops/dashboard.md` | 누적 현황 한눈에 | 주간/월간 리뷰 시 |
 | `ops/budget.md` | 예산 설정 및 최적화 목표 | 최적화 방향 검토 시 |
-| `rules/README.md` | 규칙 빠른 참조 | 규칙 찾을 때 |
+| `docs/rules/README.md` | 규칙 빠른 참조 | 규칙 찾을 때 |
 
 ---
 

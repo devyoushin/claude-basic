@@ -40,6 +40,6 @@
 
 ## 참조 규칙
 
-- `rules/prompt-rules.md` — P1~P5 프롬프트 작성 규칙
-- `rules/token-rules.md` — T1~T5 토큰 절약 규칙
-- `rules/mistakes.md` — M1~M7 흔한 실수 회피
+- `docs/rules/prompt-rules.md` — P1~P5 프롬프트 작성 규칙
+- `docs/rules/token-rules.md` — T1~T5 토큰 절약 규칙
+- `docs/rules/mistakes.md` — M1~M7 흔한 실수 회피
