@@ -1,7 +1,7 @@
 # 토큰 절약 규칙
 
 > 카테고리: 토큰 관리
-> 참고 예시: ../guides/token-comparison.md
+> 참고 예시: ../docs/token-comparison.md
 
 ---
 

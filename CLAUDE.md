@@ -28,12 +28,12 @@ claude-basic/
 │   ├── runbook.md             # 워크플로우 런북 템플릿
 │   └── incident-report.md     # 이슈 분석 보고서 템플릿
 ├── INDEX.md                   # 전체 목차
-├── guides/
+├── docs/
 │   ├── claude-guide.md        # 개념 가이드
 │   ├── token-comparison.md    # 토큰 비교 예시
 │   ├── token-estimation.md    # 토큰 수 예측 방법
 │   └── advanced-techniques.md # 고급 활용 기법
-├── tokenops/
+├── ops/
 │   ├── log.md                 # 세션별 상세 로그 (Cost Explorer)
 │   ├── dashboard.md           # 누적 집계 현황 (Billing Dashboard)
 │   └── budget.md              # 예산 및 최적화 목표
@@ -55,7 +55,7 @@ claude-basic/
 |--------|------|---------|
 | `/new-doc` | 새 Claude 활용 문서 생성 | `/new-doc 프롬프트 캐싱 전략` |
 | `/new-runbook` | 새 워크플로우 런북 생성 | `/new-runbook 멀티 에이전트 설정` |
-| `/review-doc` | 문서 품질 검토 | `/review-doc guides/claude-guide.md` |
+| `/review-doc` | 문서 품질 검토 | `/review-doc docs/claude-guide.md` |
 | `/add-troubleshooting` | 이슈 케이스 추가 | `/add-troubleshooting 컨텍스트 손실` |
 | `/search-kb` | 지식베이스 검색 | `/search-kb 토큰 최적화` |
 
@@ -81,18 +81,18 @@ claude-basic/
 
 ### 1. 세션 로그 기록 (모든 작업 후 의무)
 
-작업이 완료될 때마다 `tokenops/log.md`에 아래 형식으로 한 줄 추가:
+작업이 완료될 때마다 `ops/log.md`에 아래 형식으로 한 줄 추가:
 
 ```
 | YYYY-MM-DD | S{다음번호} | {작업유형} | {모델} | ~{input} | ~{cache} | ~{output} | ~{합계} | ~${비용} | {한 줄 메모} |
 ```
 
 **작업유형 태그:** `DOC` `CODE` `DEBUG` `REVIEW` `RESEARCH` `CHAT`
-단가 및 계산식 → `tokenops/budget.md` 참조
+단가 및 계산식 → `ops/budget.md` 참조
 
 ### 2. 대시보드 업데이트
 
-log.md에 항목 추가 후 `tokenops/dashboard.md`의 아래 항목을 갱신:
+log.md에 항목 추가 후 `ops/dashboard.md`의 아래 항목을 갱신:
 - 총 세션 수, 총 토큰 합계, 총 추정 비용
 - 해당 작업유형의 세션 수 및 비용
 - TOP 5 고비용 세션 (필요 시)
@@ -100,7 +100,7 @@ log.md에 항목 추가 후 `tokenops/dashboard.md`의 아래 항목을 갱신:
 
 ### 3. 예산 초과 감지
 
-작업 완료 후 당일 누적 비용이 `tokenops/budget.md`의 경고 임계치($0.80/일)를 넘으면
+작업 완료 후 당일 누적 비용이 `ops/budget.md`의 경고 임계치($0.80/일)를 넘으면
 응답 마지막에 아래 경고를 출력:
 
 ```

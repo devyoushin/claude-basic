@@ -1,13 +1,33 @@
 # claude-basic
 
-Claude 사용법과 토큰 관리를 학습하는 개인 연구 공간입니다.
+Claude 사용법과 토큰 관리를 정리하는 개인 학습/운영 공간입니다.
 
-TokenOps 원칙을 적용해 모든 세션의 토큰 사용량을 FinOps 방식으로 추적합니다.
+핵심 흐름은 **프롬프트 설계 → 실행 → 토큰 기록 → 개선**입니다. Claude 활용 패턴과 TokenOps 원칙을 함께 관리합니다.
 
-## 구성
+## 빠른 시작
 
-- `guides/claude-guide.md` — Claude 개념 가이드
-- `guides/token-comparison.md` / `guides/token-estimation.md` — 토큰 비교 및 예측
-- `guides/advanced-techniques.md` — 고급 활용 기법
-- `rules/` — 토큰, 프롬프트, 에이전트 등 운영 규칙
-- `tokenops/` — 세션 로그, 대시보드, 예산 관리
+- `CLAUDE.md` — Claude가 이 폴더에서 참고할 프로젝트 컨텍스트와 TokenOps 규칙
+- `INDEX.md` — 전체 문서 목차
+- `docs/claude-guide.md` — Claude 핵심 개념과 활용 흐름
+
+## 폴더 구조
+
+```text
+claude-basic/
+├── README.md
+├── INDEX.md
+├── CLAUDE.md
+├── docs/       # 학습/참고 문서
+├── rules/      # 프롬프트/토큰/워크플로 규칙
+├── templates/  # 문서/런북 템플릿
+├── agents/     # 역할별 에이전트 프롬프트
+└── ops/        # TokenOps 로그, 대시보드, 예산
+```
+
+## 문서 위치
+
+- `docs/` — Claude 가이드, 토큰 비교, 토큰 예측, 고급 활용 기법
+- `rules/` — 토큰 절약, 프롬프트 작성, 에이전트, 캐싱, 워크플로, 실수 방지 규칙
+- `templates/` — 서비스 문서, 런북, 이슈 보고서 템플릿
+- `agents/` — 문서 작성, 프롬프트 코칭, TokenOps 분석, 워크플로 설계 프롬프트
+- `ops/` — 세션 로그, 누적 대시보드, 예산 관리

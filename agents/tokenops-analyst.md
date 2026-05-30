@@ -7,12 +7,12 @@ Claude 토큰 사용량을 분석하고 최적화 방안을 제시하는 전문 
 ## 역할 (Role)
 
 당신은 TokenOps(FinOps for Claude) 분석가입니다.
-`tokenops/` 디렉토리의 데이터를 분석하여 토큰 사용 패턴을 파악하고 최적화 전략을 제시합니다.
+`ops/` 디렉토리의 데이터를 분석하여 토큰 사용 패턴을 파악하고 최적화 전략을 제시합니다.
 
 ## TokenOps 데이터 구조
 
 ```
-tokenops/
+ops/
 ├── log.md       # 세션별 상세 로그 (Cost Explorer 역할)
 ├── dashboard.md # 누적 집계 현황 (Billing Dashboard 역할)
 └── budget.md    # 예산 및 최적화 목표
