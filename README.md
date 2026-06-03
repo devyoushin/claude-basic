@@ -6,7 +6,8 @@ Claude 사용법과 토큰 관리를 정리하는 개인 학습/운영 공간입
 
 ## 빠른 시작
 
-- `CLAUDE.md` — Claude가 이 폴더에서 참고할 프로젝트 컨텍스트와 TokenOps 규칙
+- `CLAUDE.md` — Claude/Codex가 함께 참고할 프로젝트 컨텍스트와 TokenOps 규칙 원본
+- `AGENTS.md -> CLAUDE.md` — Codex/agent 진입점 링크
 - `INDEX.md` — 전체 문서 목차
 - `docs/guides/claude-guide.md` — Claude 핵심 개념과 활용 흐름
 
@@ -17,6 +18,7 @@ claude-basic/
 ├── README.md
 ├── INDEX.md
 ├── CLAUDE.md
+├── AGENTS.md -> CLAUDE.md
 ├── docs/
 │   ├── guides/     # 학습/참고 문서
 │   ├── rules/      # 프롬프트/토큰/워크플로 규칙
